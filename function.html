@@ -1,0 +1,41 @@
+<!---
+<script>
+    function class_one(arg1,arg2,arg3){
+        this.var_one=arg1;
+        this.var_two=arg2;
+        this.var_three=arg3;
+    };
+    function class_two(){
+        this.fun_one=function(){
+            return "hello1";
+        };
+        };   
+        function class_three(){
+        this.fun_one=function(){
+            return "hello2";
+        };
+        };   
+        function class_four(){
+        this.fun_one=function(){
+            return "hello3";
+        };
+    };
+let obj=new class_one(new class_two(),new class_three(),new class_four());
+console.log(obj.var_one); //call class_two obj
+console.log(obj.var_one.fun_one()); //hello1
+        </script>
+        --->
+        <script>
+            function class_one(){
+
+
+            };
+            class_one.prototype.var_one="Hello1";
+            function class_two(){
+
+            };
+            class_two.prototype=object.create(class_one.prototype);
+            class_two.prototype.var_two="hello2";
+            let obj=new class_two();
+            console.log(obj.var_two,obj.var_one);
+            </script>

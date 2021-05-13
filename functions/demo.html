@@ -1,0 +1,71 @@
+<!--
+<script>
+    //let fun_one=()=>{
+       // return "welcome to arrow function";
+    //}
+    //console.log(fun_one());
+    //let fun_one=(arg1,arg2)=>{
+       // console.log(arg1,arg2);
+   // };
+    //fun_one("react","node");
+    //fun_one();
+    //fun_one(null,null);
+    //fun_one(undefined,null);
+
+    let fun_one=()=>{
+        return()=>{
+            return"hello";
+        }
+    };
+    console.log(fun_one()());
+    </script>
+
+-->
+<!--
+    <script>
+        let fun=(arg1,arg2,arg3)=>{
+console.log(arg1,arg2,arg3);
+        };
+        let fun_one=()=>{
+            return"hello1";
+        };
+        let fun_two=()=>{
+            return"hello2";
+        };
+let fun_three=()=>{
+    return
+}
+        </script>
+        --->
+<!---
+        <script>
+            function fun_one(...arg1){
+                console.log(arg1);
+            }
+            fun_one("hello1","hello2");
+            fun_one();
+            fun_one("undefined");
+            </script>
+        -->
+        <!---
+        <script>
+function fun_one(arg1,arg2="hello"){
+    console.log(arg1,arg2);
+}
+fun_one();
+fun_one("hello1");
+fun_one("hello1",null);
+fun_one("hello1",undefined);
+fun_one(undefined,undefined);
+            </script>
+            --->
+            <script>
+                let fun=((arg1,arg2,arg3)=>{
+                  console.log(arg1,arg2,arg3);
+                })
+                fun(
+                    (()=>{return "hello1"})()
+                    (()=>{})
+                
+                </script>
+                                         
